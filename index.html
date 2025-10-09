@@ -5,21 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planes Shape n' Shake</title>
   <style>
-    body {
+    /* Reset de márgenes y padding */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Cuerpo centrado vertical y horizontalmente */
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background-color: #0d0d0d; /* fondo oscuro opcional */
+      height: 100vh; /* ocupa toda la pantalla */
+      background-color: #0d0d0d; /* fondo oscuro elegante */
     }
+
+    /* Imagen responsiva */
     img {
-      max-width: 100%;
-      height: auto;
+      max-width: 95%;  /* ocupa casi toda la pantalla */
+      max-height: 95vh; /* no pasa del alto de la pantalla */
+      border-radius: 10px; /* bordes redondeados opcional */
+      object-fit: contain; /* mantiene proporción */
     }
   </style>
 </head>
 <body>
+  <!-- Cambiá planes2025.jpg por el nombre exacto de tu imagen -->
   <img src="personal plans gym 2025.jpg" alt="Planes Shape n Shake">
 </body>
 </html>
